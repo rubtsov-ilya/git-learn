@@ -4,6 +4,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const animationDelay = 0.55;
+
 
 const pcScreen = window.matchMedia('(min-width: 993px)')
 if (pcScreen.matches) {
@@ -20,7 +22,7 @@ if (pcScreen.matches) {
         opacity: 1,
         duration: 0.2,
         stagger: 0.15,
-    })
+    }, animationDelay,)
 
     .fromTo(
     '.nav-booking__tel',
@@ -69,7 +71,7 @@ if (pcScreen.matches) {
         opacity: 1,
         duration: 0.2,
         stagger: 0.15,
-    })
+    }, animationDelay,)
     
     .fromTo(
     '.nav-booking__btn',
