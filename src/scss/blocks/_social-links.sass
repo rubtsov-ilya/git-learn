@@ -1,0 +1,27 @@
+.social-links 
+    display: flex
+    gap: 10px
+
+    &__item 
+        width: 44px
+        height: 44px
+        border-radius: 500px
+        background-color: var(--text-white)
+
+    &__link
+        width: 44px
+        height: 44px
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &__img
+        color: var(--black)
+        font-size: 16px
+        height: 20px
+        width: 20px
+        user-select: none
+        transition: fill 0.15s ease
+        fill: var(--black)
+        &:hover
+            fill: var(--ui-orange)

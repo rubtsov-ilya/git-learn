@@ -1,0 +1,38 @@
+.photo-section
+    padding: 120px 0
+    background-color: var(--white-bg)
+    @include tablet
+        padding: 100px 0
+    @include tablet-small
+        padding: 84px 0
+    &__text-wrapper
+        color: var(--text-black)
+    &__text
+        font-weight: 600
+        font-size: 11px
+        text-transform: uppercase
+    &__grid-photos
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        gap: 30px
+        margin-top: 44px
+        @include tablet
+            grid-template-columns: 1fr 1fr
+        @include tablet-small
+            grid-template-columns: 1fr
+            margin-top: 71px
+
+        img
+            color: var(--text-black)
+            height: 360px
+            object-fit: cover
+            background-color: var(--black-bg)
+            width: 100%
+            
+
+        img:nth-child(2)
+            object-position: left
+
+        img:nth-child(4)
+            object-position: left
+

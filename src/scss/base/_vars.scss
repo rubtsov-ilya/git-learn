@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=block');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=block');
+/* &display=swap */
+:root {
+	/* colors */
+	--white: #fff;
+	--white-accent: #9da4bd;
+	--white-accent-opacity: rgba(157, 164, 189, 0.6);
+	--black: #303030;
+	--black-accent: #555;
+	--really-black: #000;
+	--gray: rgb(247, 247, 247);
+
+	/* light mode */
+	/* text color */
+	--text-white: var(--white);
+	--text-black: var(--black);
+	--text-white-accent: var(--white-accent);
+	--text-white-accent-opacity: var(--white-accent-opacity);
+	--text-black-accent: var(--black-accent);
+	/* background */
+	--white-bg: var(--white);
+	--black-bg: var(--black);
+	/* prices */
+	--prices-bg: #111319;
+
+	/* 4 cards */
+	--card-bg: var(--gray);
+
+	/* barbers */
+	--barbers-bg: var(--gray);
+	/* info */
+	--info-bg: #191c26;
+	/* ui elements */
+	--ui-orange: #ff6c00;
+
+	/* popup */
+	--popup-bg: var(--white);
+
+	/* hamburger */
+	--hamburger-bg: var(--black);
+	
+	.dark {
+		/* dark mode */
+		--text-black: var(--white);
+		--text-black-accent: var(--white-accent);
+
+		--white-bg: var(--really-black);
+		--black-bg: var(--black);
+
+		--card-bg: var(--black);
+		--barbers-bg: var(--black);
+
+		--popup-bg: var(--black);
+
+		--hamburger-bg: var(--white);
+	}
+
+	/* fonts */
+	--font-family: "Open Sans", sans-serif;
+	--second-family: "Raleway", sans-serif;
+
+
+	/* swiper */
+	--swiper-pagination-color: #fff;
+	--swiper-pagination-left: auto;
+	--swiper-pagination-right: 20px;
+	--swiper-pagination-top: auto;
+	--swiper-pagination-fraction-color: inherit;
+	--swiper-pagination-progressbar-bg-color: rgba(0, 0, 0, 0.25);
+	--swiper-pagination-bullet-border-radius: 0;
+	--swiper-pagination-progressbar-size: 4px;
+	--swiper-pagination-bullet-size: 18px;
+	--swiper-pagination-bullet-width: 8px;
+	--swiper-pagination-bullet-height: 2px;
+	--swiper-pagination-bullet-inactive-color: rgb(157, 164, 189);
+	--swiper-pagination-bullet-inactive-opacity: 1;
+	--swiper-pagination-bullet-opacity: 1;
+	--swiper-pagination-bullet-horizontal-gap: 0px;
+	--swiper-pagination-bullet-vertical-gap: 0px;
+	.swiper-pagination-bullet-active {
+		--swiper-pagination-bullet-width: 18px;
+	};
+	.swiper-pagination-bullets {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: 12px;
+	};
+}
+
+@mixin retina-bg($image) {
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		background-image: $image;
+	}
+}
+
+
+@mixin desctop-small(){
+	@media (max-width: 992px) {
+		@content;
+	}
+}
+
+@mixin tablet(){
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin header-tablet(){
+	@media (max-width: 740px) {
+		@content;
+	}
+}
+
+
+@mixin tablet-small(){
+	@media (max-width: 610px) {
+		@content;
+	}
+}
+
+@mixin mobile(){
+	@media (max-width: 480px) {
+		@content;
+	}
+}
+
+

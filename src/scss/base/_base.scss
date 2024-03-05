@@ -1,0 +1,39 @@
+
+html,
+body {
+	font-family: var(--font-family);
+	color: var(--text-white);
+}
+
+body.lock {
+	overflow: hidden;
+}
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+}
+
+.container {
+	max-width: 1230px;
+	padding: 0 30px;
+	margin: 0 auto;
+	@include tablet{
+		padding: 0 39px;
+	}
+	@include mobile{
+		padding: 0 31px;
+	}
+
+	
+}
+
+.none {
+	display: none !important;
+}
+
+.title-2 {
+	font-weight: 700;
+    font-size: clamp(32px, 1.702rem + 1.49vw, 42px);
+}
+

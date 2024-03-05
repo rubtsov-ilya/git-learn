@@ -1,0 +1,39 @@
+.achievements-section
+    background-color: var(--white-bg)
+    padding: 120px 0
+    @include tablet
+        padding: 100px 0
+    @include tablet-small
+        padding: 84px 0
+
+    &__content
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 30px
+        @include tablet
+            grid-template-columns: 1fr 1fr 1fr
+            gap: 44px 30px
+        
+        @include tablet-small
+            grid-template-columns: 1fr 1fr
+            gap: 44px 30px
+        
+
+    &__cards-grid
+        @include tablet
+            grid-row-start: 2
+            grid-column-start: 2
+            grid-column-end: 4
+        @include tablet-small
+            grid-column-start: 1
+            grid-column-end: 3
+
+    &__achievements-desc
+        max-width: 500px
+        @include tablet
+            grid-row-start: 1
+            grid-column-start: 1
+            grid-column-end: 4
+        @include tablet-small
+            grid-column-end: 3
+            

@@ -1,0 +1,51 @@
+.header
+    background-color: var(--white-bg)
+    height: 680px
+    @include mobile
+        height: 580px
+    @include header-tablet
+        background-color: var(--black)
+
+
+    &__content
+        position: relative
+
+
+
+    &__nav 
+        position: absolute
+        top: 38px
+        right: 0
+        left: 0
+        z-index: 4
+        @include header-tablet
+            display: none !important
+    &__sidebar
+        position: absolute
+        bottom: 40px
+        left: 27px
+        z-index: 4
+        transform-origin: left bottom
+        transform: rotate(-90deg) translate(0%, 100%)
+        @include desctop-small
+            padding-top: 10.72px
+        @include header-tablet
+            display: none !important
+
+    &__header-desc 
+        position: absolute
+        top: 272px
+        left: 200px
+        z-index: 4
+        @include header-tablet
+            left: 39px
+        @include mobile
+            left: 31px
+            top: 208px
+            right: 31px
+
+    &__container
+        @include header-tablet
+            padding: 0px
+    &__mobile-navbar 
+

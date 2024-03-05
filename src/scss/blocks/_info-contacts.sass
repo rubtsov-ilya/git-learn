@@ -1,0 +1,86 @@
+.info-contacts
+    padding: 130px 0 111px 105px
+    @include desctop-small
+        padding: 100px 0
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 30px
+        align-items: center
+    @include tablet-small
+        padding: 84px 0
+        grid-template-columns: 1fr
+        gap: 0
+    
+    &__first-wrapper
+        //for grid adaptation
+    &__second-wrapper
+        //for grid adaptation
+    &__title 
+        color: var(--text-white)
+        font-family: var(--second-family)
+        font-size: 42px
+        font-weight: 700
+        letter-spacing: 0.05em
+        @include tablet-small
+            display: flex
+            justify-content: center
+    &__item 
+        display: flex
+        align-items: center
+        gap: 16px
+        margin-top: 20px
+        &--first
+            align-items: flex-start
+            margin-top: 40px
+
+
+    &__icon 
+        width: 24px
+        height: 24px
+        &--first
+            margin-top: 6px
+
+
+
+    &__adress 
+        width: 230px
+        color: var(--text-white-accent)
+        font-size: 18px
+        font-weight: 700
+        line-height: 1.667
+        letter-spacing: 0.02em
+        
+
+    &__phone-number
+        color: var(--text-white-accent)
+        font-size: 18px
+        font-weight: 400
+        line-height: 1.667
+        letter-spacing: 0.02em
+        text-decoration-line: underline
+    &__email
+        color: var(--text-white-accent)
+        font-size: 18px
+        font-weight: 400
+        line-height: 1.667
+        letter-spacing: 0.02em
+        text-decoration-line: underline !important
+
+    &__line-wrapper
+        margin-top: 70px
+        p
+            color: var(--text-white)
+            font-size: 11px
+            font-weight: 600
+        @include desctop-small
+            margin-top: 44px
+    &__time
+        color: var(--text-white-accent)
+        font-size: 18px
+        font-weight: 400
+        line-height: 1.6667
+        letter-spacing: 0.02em
+        margin-top: 20px
+       
+
+

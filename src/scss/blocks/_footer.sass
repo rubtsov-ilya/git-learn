@@ -1,0 +1,31 @@
+.footer 
+    background-color: var(--white-bg)
+    padding: 56px 0
+    &__content 
+        display: flex
+        align-items: center
+        justify-content: space-between
+        @include tablet-small
+            flex-direction: column-reverse
+            gap: 20px
+
+    &__copyright 
+        display: flex
+        align-items: center
+        gap: 11px
+        @include tablet-small
+            align-self: flex-start
+    
+    &__svg
+        width: 12px
+        height: 12px
+        fill: var(--text-white-accent)
+    &__policy
+        color: var(--text-white-accent)
+        font-size: 11px
+        font-weight: 600
+        line-height: 15px
+        letter-spacing: 0.2em
+    &__links 
+        @include tablet-small
+            align-self: flex-end

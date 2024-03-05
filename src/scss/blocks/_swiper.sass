@@ -1,0 +1,106 @@
+.swiper 
+  height: 680px !important
+  margin-left: 100px !important
+  position: relative
+  touch-action: auto !important
+  @include header-tablet
+    margin-left: 0px !important
+  @include mobile
+    height: 580px !important
+
+
+  &__overlay
+    pointer-events: none
+    position: absolute
+    left: 0
+    top: 0
+    bottom: 0
+    right: 0
+    background-image: (url('./../img/slider/slider-overlay.png'))
+    background-repeat: no-repeat
+    height: 100%
+    width: 100%
+    z-index: 1
+
+  &__slide-1
+    width: 100%
+    height: 100%
+    background-image: (url('./../img/slider/slider-img-1.jpeg'))
+    background-repeat: no-repeat
+    background-color: var(--black)
+    background-size: cover
+    background-position: center
+      
+  &__slide-2
+    width: 100%
+    height: 100%
+    background-image: (url('./../img/slider/slider-img-2.jpeg'))
+    background-repeat: no-repeat
+    background-color: var(--black)
+    background-size: cover
+    background-position: center
+  &__slide-3
+    width: 100%
+    height: 100%
+    background-image: (url('./../img/slider/slider-img-3.jpeg'))
+    background-repeat: no-repeat
+    background-color: var(--black)
+    background-size: cover
+    background-position: center
+
+
+
+.swiper-btns 
+  position: absolute
+  bottom:40px
+  right: 20px
+  display: flex
+  gap: 24px
+  z-index: 10
+  @include mobile
+    display: none
+  &__prev 
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    color: var(--text-white-accent-opacity)
+    font-size: 11px
+    font-weight: 600
+    line-height: 15px
+    text-align: left
+    transition: all 0.2s ease-in
+    user-select: none
+    width: 60px
+    &:hover p
+      color: var(--text-white)
+    &:hover div
+      background-color: #fff
+
+      
+  &__next 
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    color: var(--text-white-accent-opacity)
+    font-size: 11px
+    font-weight: 600
+    line-height: 15px
+    text-align: right
+    transition: all 0.2s ease-in
+    user-select: none
+    width: 60px
+    &:hover p
+      color: var(--text-white)
+    &:hover div
+      background-color: var(--text-white)
+  &__line
+    background-color: var(--text-white-accent-opacity)
+    height: 1px
+    width: 100%
+    margin-top: 8px
+
+.swiper-pagination
+  @include tablet
+    padding-right: 20px
+  @include mobile
+    display: none !important

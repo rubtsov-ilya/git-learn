@@ -1,0 +1,45 @@
+.info-section
+    background-color: var(--info-bg)
+    min-height: 625px
+    position: relative
+    //display: flex
+    //align-items: center
+
+
+    &__content
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 30px
+        @include desctop-small
+            grid-template-columns: 1fr
+            gap: 0px
+    &__pc-bg
+        position: absolute
+        left: 50vw
+        top: 0
+        bottom: 0
+        //min-height: 625px
+        width: 50vw
+        background-image: url(./../img/photos/info-bg.png)
+        background-size: cover
+        background-position: center left
+        background-repeat: no-repeat
+        pointer-events: none
+        @include desctop-small
+            //display: none
+            top: unset
+            right: 0
+            bottom: 0px
+            left: 0
+            width: 100vw
+            height: 449px
+        @include tablet-small
+            //display: none
+            top: unset
+            right: 0
+            bottom: 0px
+            left: 0
+            width: 100vw
+            height: 496px
+
+

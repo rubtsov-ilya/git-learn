@@ -1,0 +1,52 @@
+.prices-section
+    background-color: var(--prices-bg)
+    &__bg
+        min-height: 692px
+        background-image: url(./../img/photos/prices-img.png)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: left
+        background-color: var(--prices-bg)
+        padding: 120px 0
+        @include tablet
+            padding: 100px 0
+            min-height: 856px
+
+        @include tablet-small
+            padding: 84px 0
+            min-height: 738px
+
+    &__subtitle 
+        color: var(--text-white-accent-opacity)
+        font-size: 11px
+        font-weight: 600
+        line-height: 15px
+        letter-spacing: 0em
+        text-transform: uppercase
+    
+    &__title 
+        color: var(--text-white)
+        font-family: var(--second-family)
+        font-size: 42px
+        font-weight: 700
+        line-height: 49px
+        letter-spacing: 0.05em
+        margin-top: 20px
+        @include tablet-small
+            font-size: 39px
+        @include mobile
+            font-size: clamp(29px, -0.063rem + 8.33vw, 39px)
+    
+    &__cards 
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 30px
+        margin-top: 44px
+        @include desctop-small
+            grid-template-columns: 1fr
+            gap: 0
+    
+    &__booking
+        display: flex
+        justify-content: center
+        margin-top: 44px

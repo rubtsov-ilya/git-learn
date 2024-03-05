@@ -1,0 +1,31 @@
+.nav-booking
+    display: flex
+    align-items: center
+    gap: 30px
+    &__tel
+        color: var(--text-white)
+        font-size: 12px
+        font-weight: 600
+        line-height: 16px
+        letter-spacing: 0.1em
+    &__link
+        color: var(--text-white)
+        transition: all 0.15s ease
+        &:hover
+            color: var(--ui-orange)
+            
+    &__btn
+        display: flex
+        align-items: center
+    &__wrapper
+        display: flex
+        align-items: center
+        gap: 30px
+        @include desctop-small
+            gap: 20.13px
+            position: absolute
+            right: 0
+            top: calc( 100% + 10px )
+            min-width: 100px
+            padding-right: 19.17px
+

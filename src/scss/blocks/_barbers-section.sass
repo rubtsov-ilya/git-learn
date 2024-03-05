@@ -1,0 +1,51 @@
+.barbers-section 
+    background-color: var(--barbers-bg)
+    padding: 120px 0
+    @include tablet
+        padding: 100px 0
+        
+    @include tablet-small
+        padding: 84px 0
+
+    &__content 
+
+    &__desc
+        display: grid
+        @include tablet
+            grid-template-columns: 1fr 4fr 1fr
+        @include tablet-small
+            grid-template-columns: 1fr
+
+    &__subtitle-wrapper
+        p
+            color: var(--text-black)
+            font-size: 11px
+            font-weight: 600
+        @include tablet
+            grid-column-start: 2
+            grid-column-end: 4
+        @include tablet-small
+            grid-column-start: 1
+            grid-column-end: 1
+
+    &__title
+        color: var(--text-black)
+        font-family: var(--second-family)
+        font-size: 42px
+        font-weight: 700
+        line-height: 49px
+        letter-spacing: 0.05em
+        margin-top: 20px
+        @include tablet
+            grid-column-start: 2
+            grid-column-end: 4
+        @include tablet-small
+            grid-column-start: 1
+            grid-column-end: 1
+
+            
+    &__barbers-cards
+        margin-top: 44px
+
+
+

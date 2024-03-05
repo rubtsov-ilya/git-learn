@@ -1,0 +1,35 @@
+.grid-card 
+    background-color: var(--card-bg)
+    width: 100%
+    min-height: 133px
+    padding: 20px 24px
+    text-align: center
+
+    &__number 
+        color: var(--text-black)
+        position: relative
+        display: inline
+        font-size: 42px
+        font-weight: 700
+        line-height: 57px
+        letter-spacing: 0.05em
+
+        &::after
+            content: "+"
+            position: absolute
+            top: 7px
+            right: -14px
+            color: var(--ui-orange)
+            font-size: 16px
+            font-weight: 600
+            line-height: 22px
+            text-align: center
+
+    &__text 
+        color: var(--text-black)
+        font-size: 11px
+        font-weight: 600
+        line-height: 15px
+        letter-spacing: 0
+        text-align: center
+        margin-top: 6px

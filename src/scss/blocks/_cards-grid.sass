@@ -1,0 +1,23 @@
+.cards-grid 
+    display: grid
+    grid-template-columns: 1fr 2fr 2fr 1fr
+    gap: 30px
+    @include tablet
+        grid-template-columns: 1fr 1fr
+    &__item
+        display: flex
+        flex-direction: column
+        gap: 30px
+        &:nth-child(2)
+            margin-top: 35px
+
+        &:nth-child(1)
+            grid-column-start: 2
+            @include tablet
+                grid-column-start: 1
+        &:nth-child(2)
+            grid-column-start: 3
+            @include tablet
+                grid-column-start: 2
+                
+

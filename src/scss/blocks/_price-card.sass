@@ -1,0 +1,50 @@
+.price-card
+    max-width: 570px
+    padding: 30px 20px
+    display: flex
+    flex-direction: column
+    gap: 20px
+    background: linear-gradient(180.00deg, rgb(23, 26, 36),rgba(23, 26, 36, 0.2) 100%)
+    @include desctop-small
+        max-width: 100%
+    &--darken
+        background: linear-gradient(180.00deg, rgb(9, 11, 19),rgba(9, 11, 19, 0.2) 100%)
+        @include desctop-small
+            display: none
+    &__item 
+        display: flex
+        align-items: flex-end
+        &--none
+            display: none
+            @include desctop-small
+                display: flex
+    &__name 
+        display: inline-flex
+        color: var(--text-white-accent)
+        font-size: 18px
+        font-weight: 400
+        letter-spacing: 0.02em
+        line-height: 1.66667
+        @include tablet-small
+            font-size: 14px
+            line-height: 1.42857
+
+    &__line 
+        background: rgba(157, 164, 189, 0.12)
+        height: 1px
+        //width: 100%
+        margin: 0px 12px 4px 12px
+        flex: 1 1 
+
+    &__price 
+        display: inline-flex
+        color: var(--text-white-accent)
+        font-weight: 400
+        font-size: 18px
+        letter-spacing: 0.02em
+        line-height: 1.66667
+        @include tablet-small
+            font-size: 14px
+            line-height: 1.42857
+
+    

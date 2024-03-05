@@ -1,0 +1,69 @@
+.mobile-nav-wrapper
+    position: fixed
+    z-index: 5
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    pointer-events: none
+
+.mobile-nav-wrapper.active
+    //opacity: 1
+    //pointer-events: all
+
+.mobile-nav-wrapper__content
+    position: absolute
+    right: -337px
+    height: 100%
+    width: 337px
+    padding: 118px 0 0 40px
+    background-color: var(--white-bg)
+    transition: right 0.15s ease
+    pointer-events: all
+    @include mobile
+        width: 100%
+        right: -100%
+
+
+
+.mobile-nav-wrapper.active .mobile-nav-wrapper__content
+    right: 0
+
+
+.mobile-nav-wrapper__bg
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    pointer-events: none
+    opacity: 0
+    background-color: rgba(0, 0, 0, 0.2)
+    backdrop-filter: blur(2px)
+    transition: opacity 0.15s ease
+
+.mobile-nav-wrapper.active .mobile-nav-wrapper__bg
+    opacity: 1
+    pointer-events: all
+
+
+//mobile-nav
+.mobile-nav
+
+
+
+    &__list-item
+        margin-top: 24px
+    &__tel
+        margin-top: 64px
+    &__link
+        color: var(--text-black)
+        font-weight: 600
+        font-size: 18px
+        letter-spacing: 0.1em
+        transition: color 0.15s ease
+        &:hover
+            color: var(--ui-orange)
+    &__booking
+        display: flex
+        margin-top: 20px
